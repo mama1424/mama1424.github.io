@@ -52,13 +52,15 @@ Line 64: opens as h2 but closes as h3
 
 15 (html 2)
 Line 2: Incorrect order, html comes after DOCTYPE
-    Add <html>	
+    Add <html lang="en">	
 Line 4: Header type should be outside the head tag
     Move entire 4th line to inside the body and inside div
 Line 5: Missing closing head tag
     Add </head> 
 Line 5: body tag needs to be closed 
     Change <body to <body>
+Line 6: delete <html> since using the lang tage is proper order
+    remove <html>
 Line 8: Paragraph is never properly closed
     Add </p> to end of the line 
 Line 8: Missing strong closing tag
