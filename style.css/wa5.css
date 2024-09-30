@@ -1,0 +1,168 @@
+/* General styles - put these straight into your stylesheet */
+
+/*body preload*/
+body {
+    margin: 0;
+  }
+
+  /*html preload*/
+  html {
+    background-color: #ccc;
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+  }
+
+    /*card parameters and set up */
+    .card{
+        background-color: red; /*preloaded color to red*/
+        border: solid black; /* preloaded border size and black color*/
+        border-radius: 1.5em; /*preloaded radius for border*/
+        height: 22em; /*preloaded height for card*/
+        /*margin: 5em auto; preloaded margin sizes, auto*/
+        width: 35em; /*predloaded  width based*/
+      }
+      
+    /*card header parameters*/
+   .card header{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0)); /*preloaded gradient*/
+        border-radius: 1.5em 1.5em 0 0; /*preloaded radius*/
+        height: 2.8125em; /*set height (30px to em)*/
+        padding: 0.9375em; /*set padding (10px to em)*/
+        vertical-align: middle; /*align text vertically */
+      }
+    
+    /*card footer parameters*/
+    .card footer{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0)); /*preloaded gradient*/
+        border-radius: 1.5em 1.5em 0 0; /*preloaded radius*/
+        font-size: 0.938em; /*set font size*/
+        height: 2.8125em; /*set height (30px to em)*/
+        margin: 0; /*sets margins to zero*/
+        padding: 0.9375em; /*set padding (10px to em)*/
+        vertical-align: middle; /*align text vertically*/
+      }
+      
+    /*card article image presets*/
+    .card-article-img{
+        float: right; /*preloaded float for image */
+        max-height: 100%; /*preloaded max height for image*/
+      }
+    
+
+    /* editing the <article> to fit standards */
+    article {
+        background-color: rgba(0, 0, 0, 0.5); /* partially transparent black background */
+        font-size: 0.9375em; /*sets font size (10px in em)*/
+        height: 11.25em;/* set height (120px in em)  */
+        line-height: 1.5;/*set line height for readability */
+        vertical-align: middle; /*align text vertically*/
+    }
+
+    /* setting h2 details */
+     h2 {
+        color: black;
+        font-size: 1.875em;/*  font size set (20px in ems) */
+        line-height: 2;/* set l */
+        margin: 0; /*set margins to 0*/
+    }
+
+     /* setting parameters for <p> in footer */
+    .card-footer h3 {
+        color: black; 
+        font-size: 1.875em;/* font size set (15px in ems)*/
+        line-height: 1.5;/*set line height to 2 for spacing */
+        margin: 0;/*set margins to zero*/
+    }
+
+    /* setting parameteres for <p> in <article> */
+    article p {
+        color: #b3b3b3;/* makes text white for reedability */
+        margin:0 ; /*set margins to zero*/
+        padding-left: 1.1em;/* setting paddins so it all aligns */
+    }
+
+
+/* FORMAT FOR MY PERSONAL CARD*/
+/* General styles - put these straight into your stylesheet */
+
+/*body preload*/
+body {
+    margin: 0;
+  }
+
+  /*html preload*/
+  html {
+    background-color: #ccc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,;
+    font-size: 10px;
+  }
+
+    /*card parameters and set up */
+    .me-card{
+        background-color: palevioletred; /*preloaded color to red*/
+        border: solid brown; /* preloaded border size and black color*/
+        border-radius: 1.5em; /*preloaded radius for border*/
+        height: 22em; /*preloaded height for card*/
+        margin: 5em auto; /*preloaded margin sizes, auto*/
+        width: 35em; /*predloaded  width based*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      }
+      
+    /*card header parameters*/
+   .card header{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0)); /*preloaded gradient*/
+        border-radius: 1.5em 1.5em 0 0; /*preloaded radius*/
+        height: 2.8125em; /*set height (30px to em)*/
+        padding: 0.9375em; /*set padding (10px to em)*/
+        vertical-align: middle; /*align text vertically */
+      }
+    
+    /*card footer parameters*/
+    .card footer{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0)); /*preloaded gradient*/
+        border-radius: 1.5em 1.5em 0 0; /*preloaded radius*/
+        font-size: 0.938em; /*set font size*/
+        height: 2.8125em; /*set height (30px to em)*/
+        margin: 0; /*sets margins to zero*/
+        padding: 0.9375em; /*set padding (10px to em)*/
+        vertical-align: middle; /*align text vertically*/
+      }
+      
+    /*card article image presets*/
+    .card-article-img{
+        float: right; /*preloaded float for image */
+        max-height: 100%; /*preloaded max height for image*/
+      }
+    
+
+    /* editing the <article> to fit standards */
+    article {
+        background-color: rgba(0, 0, 0, 0.5); /* partially transparent black background */
+        font-size: 0.9375em; /*sets font size (10px in em)*/
+        height: 11.25em;/* set height (120px in em)  */
+        line-height: 1.5;/*set line height for readability */
+        vertical-align: middle; /*align text vertically*/
+    }
+
+    /* setting h2 details */
+     h2 {
+        color: black;
+        font-size: 1.875em;/*  font size set (20px in ems) */
+        line-height: 2;/* set l */
+        margin: 0; /*set margins to 0*/
+    }
+
+     /* setting parameters for <p> in footer */
+    .card-footer p {
+        color: black; 
+        font-size: 1.875em;/* font size set (15px in ems)*/
+        line-height: 1.5;/*set line height to 2 for spacing */
+        margin: 0;/*set margins to zero*/
+    }
+
+    /* setting parameteres for <p> in <article> */
+    article p {
+        color: grey;/* makes text white for reedability */
+        margin:0 ; /*set margins to zero*/
+        padding-left: 1.1em;/* setting paddins so it all aligns */
+    }
