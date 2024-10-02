@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: white;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  header{
+    position: relative;
+    width: fit-content;
+  }
+  header img{
+    height: fit-content;
+    object-fit: cover;
+    width: fit-content;
+  }
+  logo{
+    position: relative;
+  }
+
+  footer{
+    width: 100%; 
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+  }
+  footer img{
+    width: 100%; 
+    height: auto; 
+    max-height: 100px;
+    object-fit: cover; 
+  }
