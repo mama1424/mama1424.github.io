@@ -47,19 +47,22 @@
     object-fit: cover;
     width: fit-content;
   }
-  logo{
-    position: relative;
+  logo img{
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
   }
 
-  footer{
-    width: 100%; 
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-  }
   footer img{
-    width: 100%; 
-    height: auto; 
-    max-height: 100px;
-    object-fit: cover; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
   }
