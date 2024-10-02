@@ -47,17 +47,7 @@
     object-fit: cover;
     width: fit-content;
   }
-  logo img{
-    position: absolute;
-    top: 12mm;
-    left: 20mm;
-    width: 128px;
-    height: 128px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 44px 0;
-  }
+  
 
   footer img{
     position: absolute;
