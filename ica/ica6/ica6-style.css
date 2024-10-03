@@ -17,6 +17,15 @@
     height: 297mm;
     margin: 20px auto;
     position: relative;
+
+    /*inset the header image*/
+    background: url('top-image.png');
+    background: url('bottom-image.png');
+     /*positions them both*/
+    background-position: top,bottom;
+    /* add both no repeate for header and footer image*/
+    background-repeat: no-repeat, no-repeat;
+
   }
   
   address {
@@ -36,6 +45,9 @@
     text-align: center;
     padding: 44px 0;
     text-shadow: 1px 1px 1px black;
+
+     /*adds the logo as a background to the already formated h1*/
+    background-image: url(logo.png);
   }
   
   header{
