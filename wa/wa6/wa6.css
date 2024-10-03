@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+html {
+    font-family: sans-serif;
+}
+  
+body {
+    margin: 0;
+    background: white;
+}
