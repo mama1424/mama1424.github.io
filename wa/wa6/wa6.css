@@ -27,9 +27,10 @@ html {
 
 /*basic information for overlay*/
 .over{
-    background: url('buffs.png'); /*links the background for the buff logo*/
-    background: url('big12.png'); /*links the background for the big 12 logo*/
-    background-repeat: no-repeat, no-repeat; /*makes sure background does not repeat*/
+    background-color: red; /* Temporary for debugging */
+    background-position: center; /*centering on screen*/
+    background-repeat: no-repeat; /*makes sure background does not repeat*/
+    background-size: contain;
     height: 50px; /*sets height size*/
     position: absolute; /*position is absolute */
     width: 50px; /*sets width size*/
@@ -37,12 +38,14 @@ html {
 
 /* Position for top-left overlay */
 .top{
+    background: url('buffs.png'); /*links the background for the buff logo*/
     left: 10px; /*positioning for left*/
     top: 10px; /*positioning for top*/
 }
 
 /* Position for bottom-right overlay */
 .bottom{
+    background: url('big12.png'); /*links the background for the big 12 logo*/
     bottom: 10px; /*positioning for bottom*/
     right: 10px; /*positioning for right*/
 }
