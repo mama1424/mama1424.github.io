@@ -1,13 +1,48 @@
+/*basic formatting*/
 * {
     box-sizing: border-box;
-    background-color: white;
+    margin : 0;
+    padding:  0;
+
   }
   
+/*html formatting*/
 html {
     font-family: sans-serif;
-}
-  
-body {
+    height: 100%;
     margin: 0;
-    background: white;
+}
+
+/*formats background*/
+.background{
+    align-items: center; /*aligns reset of items with the center */
+    background-image: url('lacrosse.png');/*linking image used*/
+    background-position: center; /*centering on screen*/
+    background-size: cover; /*making sure the size covers the screen*/
+    display: flex; /*turning element to flex element to controll container it takes up*/
+    height: 100vh;/*looked up height to make it fit*/
+    position: relative; /*positioning on screen*/
+    width: 100vw;/*looked up width to make it fit*/
+}
+
+/*basic information for overlay*/
+.over{
+    background: url('buffs.png'); /*links the background for the buff logo*/
+    background: url('big12.png'); /*links the background for the big 12 logo*/
+    background-repeat: no-repeat, no-repeat; /*makes sure background does not repeat*/
+    height: 50px; /*sets height size*/
+    position: absolute; /*position is absolute */
+    width: 50px; /*sets width size*/
+}
+
+/* Position for top-left overlay */
+.top{
+    left: 10px; /*positioning for left*/
+    top: 10px; /*positioning for top*/
+}
+
+/* Position for bottom-right overlay */
+.bottom{
+    bottom: 10px; /*positioning for bottom*/
+    right: 10px; /*positioning for right*/
 }
