@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA #11</title>
+</head>
+<body>
+    <h1>In-Class Activity #11</h1>
+    <script>
+        // create tellfortune function
+        function tellFortune(numChildren, partnerName, geoLocation, jobTitle) {
+        let fortune = `You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChildren} kids.`;
+        document.write(`<p>${fortune}</p>`);
+        }
+
+        // Calling the function with different values
+        tellFortune(3, "Mimi", "Los Angles", "cat impersonator");
+        tellFortune(2, "Taytay", "Chicago", "slime maker");
+        tellFortune(4, "Taylor", "New York", "climber");
+        function calculateDogAge(puppyAge) {
+        let dogAge = puppyAge * 7;
+        document.write(`<p>Your doggie is ${dogAge} years old in dog years!</p>`);
+        }
+
+        // Calling the function with different values
+        calculateDogAge(1);
+        calculateDogAge(3);
+        calculateDogAge(5);
+
+        // Optional Challenge: Getting user input for the dog's age
+        function userDogAgeInput() {
+            let ageInput = prompt("Enter your dog's age:");
+            if (ageInput) {
+                calculateDogAge(parseInt(ageInput));
+            }
+        }
+        userDogAgeInput();
+        function reverseNumber(number) {
+            let reversed = number.toString().split('').reverse().join('');
+            document.write(`<p>Reversed Number: ${reversed}</p>`);
+        }
+
+        // Calling the function with different numbers
+        reverseNumber(32243);
+        reverseNumber(12345);
+        function alphabetOrder(str) {
+        let ordered = str.split('').sort().join('');
+        document.write(`<p>Alphabetical Order: ${ordered}</p>`);
+        }
+
+        // Calling the function with different strings
+        alphabetOrder('webmaster');
+        alphabetOrder('javascript');
+        function capitalizeFirstLetter(str) {
+        let capitalized = str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        document.write(`<p>Capitalized: ${capitalized}</p>`);
+        }
+
+        // Calling the function with different strings
+        capitalizeFirstLetter('the quick brown fox');
+        capitalizeFirstLetter('hello world');
+    
+    </script>
+</body>
+</html>
