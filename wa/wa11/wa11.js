@@ -4,46 +4,41 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-const images = ['/images/pic1.jpg','/images/pic2.jpg', '/images/pic3.jpg','/images/pic4.jpg','/images/pic5.jpg']
+//declare an array of image 
+const imageFiles = ['pic1.png', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
-/* Declaring the alternative text for each image file */
-const altTextImg = {
-    '/images/pic1.jpg' : 'Image of eye',
-}
+// Declaring the alt text for each image
+const altText = [
+  'Image of Folsom Football Field in Boulder, CO',
+  'Image of the flatirons in Boulder, CO',
+  'Image of purple and white flowers',
+  'Image of peaches in a box',
+  'Image of orange and yellow fall leaves on trees beside  a street road'
+];
 
-/* Looping through images */
+// Step 3: Looping through images
+imageFiles.forEach((filename, index) => {
+  const newImg = document.createElement('img');
+  newImg.setAttribute('src', `images/${filename}`);
+  newImg.setAttribute('alt', altText[index]);
+  thumbBar.appendChild(newImg);
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
-images.forEach(image =>{ const newImage = document.createElement('img');
-    newImage.setAttribute('src', `images/${image}`);
-    newImage.setAttribute('alt', altText[image]);
-    thumbBar.appendChild(newImage);  
-    }
-)
-
-newImage.addEventListener('click', () => {
-    displayedImage.setAttribute('src', newImage.getAttribute('src'));
-    displayedImage.setAttribute('alt', newImage.getAttribute('alt'));
-  }
-);
-
-
-/* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', () => {
-    const currentClass = btn.getAttribute('class');
-  
-    if (currentClass === 'dark') {
-      btn.setAttribute('class', 'light');
-      btn.textContent = 'Lighten';
-      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-    } else {
-      btn.setAttribute('class', 'dark');
-      btn.textContent = 'Darken';
-      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-    }
+  // Step 4: Add click event listener to each thumbnail
+  newImg.addEventListener('click', () => {
+    displayedImage.setAttribute('src', newImg.getAttribute('src'));
+    displayedImage.setAttribute('alt', newImg.getAttribute('alt'));
   });
+});
+
+// Step 5: Wiring up the Darken/Lighten button
+btn.addEventListener('click', () => {
+  if (btn.getAttribute('class') === 'dark') {
+    btn.setAttribute('class', 'light');
+    btn.textContent = 'Lighten';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+  } else {
+    btn.setAttribute('class', 'dark');
+    btn.textContent = 'Darken';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+  }
+});
