@@ -1,0 +1,84 @@
+/* General Carousel Styles */
+.carousel-container {
+  position: relative;
+  max-width: 80%; /* Matches the central alignment of content */
+  margin: 0 auto;
+  overflow: hidden; /* Ensures content stays within bounds */
+  background: #444; /* Dark gray background to match the site's theme */
+  border-radius: 10px; /* Adds a subtle rounded effect */
+  padding: 10px;
+}
+
+/* Carousel Track */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-track {
+  display: flex;
+}
+
+/* Carousel Items */
+.carousel-item {
+  min-width: 100%; /* Ensures one item per view */
+  text-align: center;
+  color: white;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Matches the container's style */
+}
+
+/* Caption Style */
+.caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ddd; /* Slightly lighter text for captions */
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%; /* Circular buttons */
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 95%; /* Reduce width slightly for smaller screens */
+  }
+
+  .carousel-btn {
+    padding: 8px 12px;
+  }
+
+  .caption {
+    font-size: 0.9rem;
+  }
+}
+

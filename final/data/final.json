@@ -1,0 +1,24 @@
+[
+    {
+      "title": "Project 2",
+      "description": "des",
+      "technologies": ["HTML", "CSS"],
+      "image": "images/project1-img1.jpg",
+      "link": "wa/wa2/html"
+    },
+    {
+      "title": "Project 6",
+      "description": "des",
+      "technologies": ["JavaScript"],
+      "image": "images/project2-img1.jpg",
+      "link": "wa/wa6.html"
+    },
+    {
+      "title": "Project 12",
+      "description": "des",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "image": "images/project3-img1.jpg",
+      "link": "wa/wa12.html"
+    }
+  ]
+  

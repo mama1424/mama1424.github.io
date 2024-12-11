@@ -1,0 +1,19 @@
+[
+    {
+      "src": "../images/assignment2/image2.jpg",
+      "assignment": "assignment2",
+      "caption": "Image from Assignment 2"
+    },
+    {
+      "src": "../images/assignment6/image6.jpg",
+      "assignment": "assignment6",
+      "caption": "Image from Assignment 6"
+    },
+    {
+      "src": "../images/assignment12/image12.jpg",
+      "assignment": "assignment12",
+      "caption": "Image from Assignment 12"
+    }
+  ]
+  
+  
